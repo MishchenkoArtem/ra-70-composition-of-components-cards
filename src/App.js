@@ -3,9 +3,9 @@ import Card from './components/Card.jsx';
 
 function App() {
     return (
-      <div className='page'>
-        <Card />
-      </div>
+        <div className="page">
+            <Card />
+        </div>
     );
 }
 

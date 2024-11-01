@@ -1,5 +1,5 @@
-import { useState } from "react";
-import Image from "./Image";
+import { useState } from 'react';
+import Image from './Image';
 
 export default function Card() {
     const [state, setState] = useState(false);
@@ -13,10 +13,8 @@ export default function Card() {
     };
 
     const onClick = () => {
-        setState(
-            state === false ? true : false
-        );
-    }
+        setState(state === false ? true : false);
+    };
 
     return (
         <div className="card">
@@ -30,7 +28,14 @@ export default function Card() {
                     ducimus, eum consectetur laudantium dolore aliquam
                     reprehenderit.
                 </p>
-                <button className="card__btn" onMouseDown={onMouseDown} onMouseUp={onMouseUp} onClick={onClick}>Go somewhere</button>
+                <button
+                    className="card__btn"
+                    onMouseDown={onMouseDown}
+                    onMouseUp={onMouseUp}
+                    onClick={onClick}
+                >
+                    Go somewhere
+                </button>
             </div>
         </div>
     );
